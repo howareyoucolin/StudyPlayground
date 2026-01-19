@@ -16,6 +16,7 @@ jobs:
           host: ${{ secrets.DREAMHOST_HOST }}
           username: ${{ secrets.DREAMHOST_USERNAME }}
           key: ${{ secrets.DREAMHOST_SSH_KEY }}
+          fingerprint: "SHA256:s+PXiWrPo3YUrR7t8ya+AfZ0h+pA7Cek19cT9NTqTFU"
           script: |
             cd ${{ secrets.DREAMHOST_REMOTE_PATH }}
             git pull origin main
