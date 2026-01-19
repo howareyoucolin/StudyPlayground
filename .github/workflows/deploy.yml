@@ -15,7 +15,7 @@ jobs:
         with:
           host: ${{ secrets.DREAMHOST_HOST }}
           username: ${{ secrets.DREAMHOST_USERNAME }}
-          password: ${{ secrets.DREAMHOST_PASSWORD }}
+          key: ${{ secrets.DREAMHOST_SSH_KEY }}
           script: |
             cd ${{ secrets.DREAMHOST_REMOTE_PATH }}
             git pull origin main
