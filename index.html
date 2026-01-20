@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel the Beast</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- React bundle with Clerk integration -->
+    <script src="react-auth/dist/react-auth-bundle.iife.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -14,6 +16,9 @@
         </div>
         <div class="header-right">
             <a href="#" class="nav-link">Info</a>
+            <div id="auth-container">
+                <!-- React will render the auth UI here -->
+            </div>
             <button class="download-btn">
                 Download
                 <span class="arrow">→</span>
@@ -47,5 +52,6 @@
             </p>
         </div>
     </main>
+
 </body>
 </html>
