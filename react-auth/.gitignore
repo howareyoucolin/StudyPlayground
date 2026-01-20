@@ -1,4 +1,4 @@
 node_modules/
-dist/
+# dist/ - Commented out so bundle can be committed for deployment
 .npm-cache/
 *.log
