@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SignInButton, SignOutButton, useUser } from '@clerk/clerk-react';
 
 function AuthComponent() {
   const { isSignedIn, user, isLoaded } = useUser();
+
+  // Console log user info when they login
+  useEffect(() => {
+    if (isLoaded && isSignedIn && user) {
+      console.log('ID:', user.id);
+      console.log('First Name:', user.firstName);
+      console.log('Email:', user.emailAddresses[0]?.emailAddress);
+    }
+  }, [isLoaded, isSignedIn, user]);
 
   if (!isLoaded) {
     return null; // Or a loading spinner

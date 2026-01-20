@@ -21,3 +21,7 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             git clean -fd
+            # Build React bundle
+            cd react-auth
+            npm install --production=false
+            npm run build
