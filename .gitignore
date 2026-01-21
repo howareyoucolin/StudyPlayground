@@ -1,0 +1,15 @@
+# Ignore sensitive files
+*.log
+*.tmp
+.env
+config.php
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

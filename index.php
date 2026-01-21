@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="header-left">
             <div class="avatar"></div>
-            <span class="logo-text">Marvel the Beast ****!!!</span>
+            <span class="logo-text">Marvel the Beast (docker test <?php echo "Hello World"; ?>)</span>
         </div>
         <div class="header-right">
             <a href="#" class="nav-link">Info</a>
